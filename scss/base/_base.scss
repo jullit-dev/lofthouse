@@ -74,3 +74,14 @@ a {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
+.none {
+    display: none !important;
+}
+
+.title-section {
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+}
