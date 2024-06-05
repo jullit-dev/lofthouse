@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway-Regular"), 
+        url("../fonts/RalewayRegular.woff2") format("woff2"),
+        url("../fonts/RalewayRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway-Bold"), 
+        url("../fonts/RalewayBold.woff2") format("woff2"),
+        url("../fonts/RalewayBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: local("PlayfairDisplay-Bold"),
+        url("../fonts/PlayfairDisplayBold.woff2") format("woff2"), 
+        url("../fonts/PlayfairDisplayBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Light"),
+        url("../fonts/RobotoLight.woff2") format("woff2"), 
+        url("../fonts/RobotoLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $dark;
+    color: $white;
+    font-size: 16px;
+}
+
+a {
+    color: $white;
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1140px;
+}
