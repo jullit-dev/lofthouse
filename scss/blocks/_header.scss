@@ -1,0 +1,64 @@
+.header {
+    min-height: 840px;
+    background: linear-gradient(
+        180deg,
+        #242b33 12%,
+        rgba(45, 52, 60, 0.38) 51%,
+        #242b33 92%
+    ),
+    image-set(url("./../img/header/header-bg.jpg") type("image/jpg") 1x,
+            url("./../img/header/header-bg@2x.jpg") type("image/jpg") 2x);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-bottom: 74px;
+
+    &__container {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        position: relative;
+        max-width: 556px;
+        margin: 0 auto;
+        padding-bottom: 121px;
+        text-align: center;
+        font-size: 48px;
+        font-family: $font-accent;
+        color: $accent;
+        font-weight: 700;
+    }
+
+    &__title-scroll {
+        width: 40px;
+        height: 40px;
+        background-image: url('./../img/header/mouse.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50% 0);
+        transition: transform .3s ease-in-out;
+
+        &:hover {
+            transform: translateY(20%);
+        }
+    }
+
+    &__footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 98px;
+    }
+}

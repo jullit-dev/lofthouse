@@ -1,0 +1,222 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway-Regular"), url("../fonts/RalewayRegular.woff2") format("woff2"), url("../fonts/RalewayRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway-Bold"), url("../fonts/RalewayBold.woff2") format("woff2"), url("../fonts/RalewayBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay-Bold"), url("../fonts/PlayfairDisplayBold.woff2") format("woff2"), url("../fonts/PlayfairDisplayBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Light"), url("../fonts/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #242B33;
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: #fff;
+  transition: color 0.2s ease-in;
+}
+a:hover {
+  color: #D4C17F;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1140px;
+}
+
+.header {
+  min-height: 840px;
+  background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 51%, #242b33 92%), -webkit-image-set(url("./../img/header/header-bg.jpg") type("image/jpg") 1x, url("./../img/header/header-bg@2x.jpg") type("image/jpg") 2x);
+  background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 51%, #242b33 92%), image-set(url("./../img/header/header-bg.jpg") type("image/jpg") 1x, url("./../img/header/header-bg@2x.jpg") type("image/jpg") 2x);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 74px;
+}
+.header__container {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  position: relative;
+  max-width: 556px;
+  margin: 0 auto;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "PlayfairDisplay", serif;
+  color: #D4C17F;
+  font-weight: 700;
+}
+.header__title-scroll {
+  width: 40px;
+  height: 40px;
+  background-image: url("./../img/header/mouse.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50% 0);
+  transition: transform 0.3s ease-in-out;
+}
+.header__title-scroll:hover {
+  transform: translateY(20%);
+}
+.header__footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 98px;
+}
+
+.nav {
+  font-size: 14px;
+}
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+}
+.info:first-child {
+  justify-self: end;
+}
+.info_address, .info_phone {
+  padding-left: 35px;
+}
+.info_address::before, .info_phone::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info_address::before {
+  background-image: url("./../img/header/map.svg");
+}
+.info_phone::before {
+  background-image: url("./../img/header/phone.svg");
+}/*# sourceMappingURL=main.css.map */
