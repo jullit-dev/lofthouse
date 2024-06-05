@@ -58,4 +58,30 @@ a {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1140px;
+
+    &_min {
+        max-width: 840px;
+    }
+}
+
+.visually-hidden {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.none {
+    display: none !important;
+}
+
+.title-section {
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
 }
