@@ -330,30 +330,6 @@ a:hover {
   filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
 
-.cta {
-  padding: 180px 0;
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), -webkit-image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x, url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x, url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.cta__title {
-  margin-bottom: 17px;
-}
-.cta__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-.cta__text {
-  line-height: 1.5;
-}
-.cta__form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px 30px;
-}
-
 .form__input {
   height: 50px;
   padding: 12px;
@@ -395,6 +371,30 @@ a:hover {
   background-color: #e5ca6e;
 }
 
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), -webkit-image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x, url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x, url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta__title {
+  margin-bottom: 17px;
+}
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.cta__text {
+  line-height: 1.5;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+
 .video {
   text-align: center;
 }
@@ -425,4 +425,16 @@ a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
+}
+
+.section-map {
+  padding: 180px 0;
+}
+.section-map__title {
+  margin-bottom: 88px;
+}
+
+.map {
+  height: 358px;
+  background-color: #626262;
 }/*# sourceMappingURL=main.css.map */
