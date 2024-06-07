@@ -356,6 +356,7 @@ a:hover {
   line-height: 1.23;
   color: #E7E7E7;
   text-align: center;
+  align-self: center;
 }
 .form__btn {
   height: 50px;
@@ -437,4 +438,16 @@ a:hover {
 .map {
   height: 358px;
   background-color: #626262;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+.feedback__title {
+  margin-bottom: 38px;
+}
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px 30px;
 }/*# sourceMappingURL=main.css.map */
