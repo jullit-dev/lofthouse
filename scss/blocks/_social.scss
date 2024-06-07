@@ -1,0 +1,15 @@
+.social {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    &__icon {
+        fill: $white;
+        transition: all .3 ease-in-out;
+    }
+
+    &__link:hover .social__icon {
+        fill: $accent;
+        scale: 1.3;
+    }
+}
