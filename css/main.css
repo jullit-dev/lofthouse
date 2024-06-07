@@ -254,7 +254,20 @@ a:hover {
 }
 
 .benefits {
+  position: relative;
   padding: 120px 0;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "PlayfairDisplay", serif;
 }
 .benefits__list {
   display: flex;
@@ -276,6 +289,21 @@ a:hover {
   font-weight: 300;
 }
 
+.apartments {
+  position: relative;
+}
+.apartments::before {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "PlayfairDisplay", serif;
+}
 .apartments__title {
   margin-bottom: 88px;
 }
@@ -380,8 +408,7 @@ a:hover {
 
 .cta {
   padding: 180px 0;
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), -webkit-image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x, url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x, url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -403,7 +430,20 @@ a:hover {
 }
 
 .video {
+  position: relative;
   text-align: center;
+}
+.video::before {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  line-height: 1.5;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "PlayfairDisplay", serif;
 }
 .video__link {
   position: relative;
@@ -435,7 +475,21 @@ a:hover {
 }
 
 .section-map {
+  position: relative;
   padding: 180px 0;
+}
+.section-map::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "PlayfairDisplay", serif;
+  top: 180px;
 }
 .section-map__title {
   margin-bottom: 88px;
