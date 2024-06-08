@@ -27,6 +27,12 @@
         color: $muted;
         text-align: center;
         align-self: center;
+
+        &_bottom {
+            @include tablet {
+                grid-row: 4 / 5; 
+            }
+        }
     }
 
     &__btn {

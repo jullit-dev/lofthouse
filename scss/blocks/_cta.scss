@@ -4,10 +4,13 @@
         180deg, $dark 10.42%, rgba(36, 43, 51, 0) 50.52%, $dark 90.1%), 
         linear-gradient(
         0deg, rgba(36, 43, 51, 0.9) 50.52%, rgba(36, 43, 51, 0.9)), 
-        image-set(url("./../img/cta/cta-bg.jpg") type("image/jpg") 1x,
-        url("./../img/cta/cta-bg@2x.jpg") type("image/jpg") 2x);
+        url("./../img/cta/cta-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include tablet {
+        padding: 60px 0;
+    }
 
     &__title {
         margin-bottom: 17px;
@@ -17,15 +20,27 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__text {
         line-height: 1.5;
+
+        @include tablet {
+            font-size: 14px;
+        }
     }
 
     &__form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 35px 30px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
     }
 }

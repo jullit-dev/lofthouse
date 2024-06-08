@@ -13,17 +13,72 @@
     padding-top: 30px;
     padding-bottom: 74px;
 
+    @include tablet {
+        min-height: unset;
+    }
+
     &__container {
         min-height: inherit;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include tablet {
+            row-gap: 50px;
+        }
     }
 
-    &__top-row {
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__top_mobile {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 50px;
+        background-color: $dark;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .header__nav {
+            display: block;
+        }
+
+        .nav__list {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
+
+        .header__nav-btn {
+            position: fixed;
+            top: 50px;
+            right: 15px;
+        }
+    }
+
+    &__nav {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__nav-btn {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
     }
 
     &__title {
@@ -36,6 +91,11 @@
         font-family: $font-accent;
         color: $accent;
         font-weight: 700;
+
+        @include tablet {
+            font-size: 32px;
+            padding-bottom: 80px;
+        }
     }
 
     &__title-scroll {
@@ -60,5 +120,12 @@
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         gap: 98px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
     }
 }
