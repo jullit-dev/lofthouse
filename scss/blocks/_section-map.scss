@@ -11,8 +11,14 @@
         top: 180px;
     }
 
+    padding: 90px 0;
+
     &__title {
         margin-bottom: 88px;
+
+        @include tablet {
+            margin-bottom: 44px;
+        }
     }
 }
 

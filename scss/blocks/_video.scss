@@ -1,6 +1,7 @@
 .video {
     position: relative;
     text-align: center;
+    overflow: hidden;
 
     &::before {
         content: 'IV';
@@ -8,6 +9,7 @@
         transform: translate(-50%, 0%);
         line-height: 1.5;
         @include decorNumber;
+
     }
 
     &__link {
@@ -41,5 +43,10 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transition: all .2s ease-in;
+
+        @include tablet {
+            width: 80px;
+            height: 80px;
+        }
     }
 }
