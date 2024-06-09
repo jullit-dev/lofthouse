@@ -66,7 +66,7 @@ phoneInputs.forEach((input) => {
         // myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
         // myMap.controls.remove('zoomControl'); // удаляем контроль зумирования
         myMap.controls.remove('rulerControl'); // удаляем контроль правил
-        myMap.controls.remove('scrollZoom'); // удаляем скролл карты
+        // myMap.controls.remove('scrollZoom'); // удаляем скролл карты
 
         myMap.geoObjects.add(myPlacemark);
         // myPlacemark.balloon.open();
