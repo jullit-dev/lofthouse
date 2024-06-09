@@ -176,8 +176,7 @@ a:hover {
 
 .header {
   min-height: 840px;
-  background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 51%, #242b33 92%), -webkit-image-set(url("./../img/header/header-bg.jpg") type("image/jpg") 1x, url("./../img/header/header-bg@2x.jpg") type("image/jpg") 2x);
-  background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 51%, #242b33 92%), image-set(url("./../img/header/header-bg.jpg") type("image/jpg") 1x, url("./../img/header/header-bg@2x.jpg") type("image/jpg") 2x);
+  background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 51%, #242b33 92%), url("./../img/header/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
@@ -194,15 +193,13 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (max-width: 959px) {
-  .header__container {
-    row-gap: 50px;
-  }
-}
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__top_mobile .header__logo {
+  margin-bottom: 50px;
 }
 .header__top_mobile {
   position: fixed;
@@ -210,7 +207,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  row-gap: 50px;
   background-color: #242B33;
   top: 0;
   left: 0;
@@ -250,7 +246,8 @@ a:hover {
   position: relative;
   max-width: 556px;
   margin: 0 auto;
-  padding-bottom: 121px;
+  padding-top: 50px;
+  padding-bottom: 171px;
   text-align: center;
   font-size: 48px;
   font-family: "PlayfairDisplay", serif;
@@ -260,7 +257,7 @@ a:hover {
 @media screen and (max-width: 959px) {
   .header__title {
     font-size: 32px;
-    padding-bottom: 80px;
+    padding-bottom: 130px;
   }
 }
 .header__title-scroll {
@@ -270,9 +267,9 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   left: 50%;
-  transform: translateX(-50% 0);
+  transform: translate(-50%, 0);
   transition: transform 0.3s ease-in-out;
 }
 .header__title-scroll:hover {
@@ -402,6 +399,11 @@ a:hover {
   position: relative;
   padding: 120px 0;
   overflow: hidden;
+}
+@media screen and (max-width: 959px) {
+  .benefits {
+    padding: 60px 0;
+  }
 }
 .benefits::after {
   content: "II";
@@ -692,7 +694,6 @@ a:hover {
 .section-map {
   position: relative;
   padding: 180px 0;
-  padding: 90px 0;
 }
 .section-map::before {
   content: "V";
@@ -706,6 +707,11 @@ a:hover {
   font-size: 400px;
   font-family: "PlayfairDisplay", serif;
   top: 180px;
+}
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 80px 0;
+  }
 }
 .section-map__title {
   margin-bottom: 88px;
