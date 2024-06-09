@@ -273,7 +273,7 @@ a:hover {
   transition: transform 0.3s ease-in-out;
 }
 .header__title-scroll:hover {
-  transform: translateY(20%);
+  transform: translate(-50%, 20%);
 }
 .header__footer {
   display: grid;
