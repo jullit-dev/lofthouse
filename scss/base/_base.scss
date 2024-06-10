@@ -90,6 +90,17 @@ a {
     }
 }
 
+.title-item {
+    font-size: 24px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+
+    @include tablet {
+        font-size: 16px;
+    }
+}
+
 .link-bold {
     color: $accent;
     font-weight: 700;
@@ -97,4 +108,9 @@ a {
 
 .no-scroll {
     overflow-y: hidden;
+}
+
+.dev {
+    text-align: center;
+    padding: 100px;
 }
