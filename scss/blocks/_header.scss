@@ -1,19 +1,23 @@
 .header {
-    min-height: 840px;
-    background: linear-gradient(
-        180deg,
-        #242b33 12%,
-        rgba(45, 52, 60, 0.38) 51%,
-        #242b33 92%
-    ),
-    url("./../img/header/header-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 30px;
     padding-bottom: 74px;
 
     @include tablet {
         min-height: unset;
+    }
+
+    &_main {
+ 
+        min-height: 840px;
+        background: linear-gradient(
+            180deg,
+            #242b33 12%,
+            rgba(45, 52, 60, 0.38) 51%,
+            #242b33 92%
+        ),
+        url("./../img/header/header-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__container {
