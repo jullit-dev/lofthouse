@@ -25,6 +25,10 @@
     &__logo {
         position: relative;
         top: -12px;
+
+        @include tablet {
+            top: 0;
+        }
     }
 
     &__nav {
@@ -33,7 +37,7 @@
 
         @include tablet {
             grid-template-columns: 1fr;
-            grid-row: 1 / 4;
+            grid-row: 1 / 3;
         }
     }
 

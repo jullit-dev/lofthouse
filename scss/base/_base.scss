@@ -79,6 +79,18 @@ a {
     display: none !important;
 }
 
+.title-main {
+    text-align: center;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+
+    @include tablet {
+        font-size: 32px;
+    }
+}
+
 .title-section {
     font-size: 36px;
     font-family: $font-accent;
@@ -97,7 +109,7 @@ a {
     font-weight: 700;
 
     @include tablet {
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
