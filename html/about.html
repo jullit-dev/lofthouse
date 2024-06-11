@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header_main">
         <div class="header__container container">
             <div class="header__top">
                 <a href="./../index.html">
@@ -35,24 +35,28 @@
                         <div class="nav-icon"></div>
                     </button>
                 </div>
+        </div>
+
+            <h1 class="header__title title-main header__title-about">Добро пожаловать в LoftHouse — жилой комплекс бизнес-класса в самом сердце города
+                <a class="header__title-scroll" href="#about"></a>
+            </h1>
+            <div class="header__footer">
+                <a href="#section-map" class="info info_address">Наб. реки Фонтанки 10-15</a>
+                <a href="tel:+78121234567" class="info info_phone">8 (812) 123-45-67</a>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="dev">
-            Раздел в разработке
-        </div>
-
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
-                <h1>Добро пожаловать в LoftHouse — жилой комплекс бизнес-класса в самом сердце города.</h1>
-                <p>
+                <h2 class="visually-hidden">Информация о ЖК LoftHouse</h2>
+                <p class="about__text">
                     Наш проект сочетает в себе историческое наследие и современные удобства, создавая неповторимую
                     атмосферу для
                     жизни.
                 </p>
-                <p>
+                <p class="about__text">
                     Жилой комплекс LoftHouse — это воплощение комфорта, стиля и неповторимого образа жизни в центре
                     города.
                 </p>
@@ -62,66 +66,80 @@
             <div class="container">
                 <h2 class="advantages__title title-section">Преимущества и особенности жилого комплекса LoftHouse</h2>
                 <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <h3 class="advantages__item-title title-item">Идеальное расположение</h3>
-                        <p class="advantages__item-text">
-                            Жилой комплекс LoftHouse расположен в&nbsp;центре города, на&nbsp;набережной реки Фонтанки.
-                            Это
-                            означает, что вы&nbsp;будете жить
-                            напротив основных культурных и&nbsp;исторических достопримечательностей города. Прогулки
-                            по&nbsp;старинным улочкам и&nbsp;наслаждение
-                            историческими зданиями станут частью вашей повседневной жизни.
-                        </p>
+                    <li class="advantages__item advantages__item_descr-left">
+                        <div class="advantages__descr">
+                            <h3 class="advantages__item-title title-item">Идеальное расположение</h3>
+                            <p class="advantages__item-text">
+                                Жилой комплекс LoftHouse расположен в&nbsp;центре города, на&nbsp;набережной реки Фонтанки.
+                                Это
+                                означает, что вы&nbsp;будете жить
+                                напротив основных культурных и&nbsp;исторических достопримечательностей города. Прогулки
+                                по&nbsp;старинным улочкам и&nbsp;наслаждение
+                                историческими зданиями станут частью вашей повседневной жизни.
+                            </p>
+                        </div>
+                        <div class="advantages__img"></div>
                     </li>
-                    <li>
-                        <h3 class="advantages__item-title title-item">Исторические парки и&nbsp;скверы</h3>
-                        <p class="advantages__item-text">
-                            Рядом с&nbsp;нашим комплексом расположены знаменитые парки и&nbsp;скверы, которые идеально
-                            подходят для утренних пробежек,
-                            вечерних прогулок и&nbsp;отдыха на&nbsp;свежем воздухе. Здесь вы&nbsp;сможете насладиться
-                            тишиной и&nbsp;спокойствием природы, оставаясь в
-                            центре городской жизни.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="advantages__item-title title-item">Элегантные и&nbsp;просторные квартиры</h3>
-                        <p class="advantages__item-text">
-                            LoftHouse предлагает широкий выбор квартир площадью
-                            от&nbsp;40&nbsp;до&nbsp;170&nbsp;кв.&nbsp;м. В&nbsp;наших трех секциях расположено всего 56
-                            квартир, что обеспечивает атмосферу приватности и&nbsp;эксклюзивности. Каждая квартира
-                            оформлена в&nbsp;современном стиле и
-                            оснащена всем необходимым для комфортного проживания.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="advantages__item-title title-item">Полностью обустроенная территория</h3>
-                        <p class="advantages__item-text">
-                            Наш жилой комплекс предлагает своим жителям высокий уровень комфорта и&nbsp;безопасности.
-                            На&nbsp;территории комплекса находятся
-                            10&nbsp;фонтанов, создающих уютную атмосферу и&nbsp;способствующих расслаблению. Для
-                            любителей активного образа жизни
-                            предусмотрены велодорожки протяженностью 6&nbsp;км, где можно заниматься спортом
-                            и&nbsp;проводить время на&nbsp;свежем воздухе.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="advantages__item-title title-item">Современная инфраструктура</h3>
-                        <p class="advantages__item-text">
-                            LoftHouse&nbsp;&mdash; это полностью обустроенный жилой комплекс с&nbsp;развитой
-                            инфраструктурой. Здесь вы&nbsp;найдете все необходимое для
-                            комфортной жизни: от&nbsp;магазинов и&nbsp;ресторанов до&nbsp;современных оздоровительных
-                            центров. В&nbsp;нашем комплексе созданы все
-                            условия для того, чтобы каждый день вы&nbsp;чувствовали себя комфортно.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="advantages__item-title title-item">Высокий уровень безопасности</h3>
-                        <p class="advantages__item-text">
-                            Мы&nbsp;заботимся о&nbsp;вашем спокойствии и&nbsp;безопасности. Территория комплекса
-                            находится под круглосуточным видеонаблюдением,
-                            современная система доступа обеспечивает защиту со&nbsp;стороны входа.
-                        </p>
-                    </li>
+                    <li class="advantages__item advantages__item_descr-right">
+                        <div class="advantages__descr">
+                            <h3 class="advantages__item-title title-item">Исторические парки и&nbsp;скверы</h3>
+                            <p class="advantages__item-text">
+                                Рядом с&nbsp;нашим комплексом расположены знаменитые парки и&nbsp;скверы, которые идеально
+                                подходят для утренних пробежек,
+                                вечерних прогулок и&nbsp;отдыха на&nbsp;свежем воздухе. Здесь вы&nbsp;сможете насладиться
+                                тишиной и&nbsp;спокойствием природы, оставаясь в
+                                центре городской жизни.
+                            </p>
+                        </div>
+                        <div class="advantages__img"></div>                    </li>
+                    <li class="advantages__item advantages__item_descr-left">
+                        <div class="advantages__descr">
+                            <h3 class="advantages__item-title title-item">Элегантные и&nbsp;просторные квартиры</h3>
+                            <p class="advantages__item-text">
+                                В&nbsp;здании предусмотрены три секции, где
+                                размещено всего 56&nbsp;квартир, что создает атмосферу приватности и&nbsp;эксклюзивности.
+                                LoftHouse&nbsp;предлагаем квартиры различной площади&nbsp;&mdash; от&nbsp;уютных 40-метровых студий
+                                до&nbsp;роскошных 170-метровых апартаментов. Каждая квартира оснащена современными системами
+                                комфорта и&nbsp;безопасности, большими панорамными окнами. Высокие потолки
+                                и&nbsp;качественная отделка создают ощущение простора и&nbsp;свободы.
+                            </p>
+                        </div>
+                        <div class="advantages__img"></div>                    </li>
+                    <li class="advantages__item advantages__item_descr-right">
+                        <div class="advantages__descr">
+                            <h3 class="advantages__item-title title-item">Полностью обустроенная территория</h3>
+                            <p class="advantages__item-text">
+                                Наш жилой комплекс предлагает своим жителям высокий уровень комфорта и&nbsp;безопасности.
+                                На&nbsp;территории комплекса находятся
+                                10&nbsp;фонтанов, создающих уютную атмосферу и&nbsp;способствующих расслаблению. Для
+                                любителей активного образа жизни
+                                предусмотрены велодорожки протяженностью 6&nbsp;км, где можно заниматься спортом
+                                и&nbsp;проводить время на&nbsp;свежем воздухе.
+                            </p>
+                        </div>
+                        <div class="advantages__img"></div>                    </li>
+                    <li class="advantages__item advantages__item_descr-left">
+                        <div class="advantages__descr">
+                            <h3 class="advantages__item-title title-item">Современная инфраструктура</h3>
+                            <p class="advantages__item-text">
+                                LoftHouse&nbsp;&mdash; это полностью обустроенный жилой комплекс с&nbsp;развитой
+                                инфраструктурой. Здесь вы&nbsp;найдете все необходимое для
+                                комфортной жизни: от&nbsp;магазинов и&nbsp;ресторанов до&nbsp;современных оздоровительных
+                                центров. В&nbsp;нашем комплексе созданы все
+                                условия для того, чтобы каждый день вы&nbsp;чувствовали себя комфортно.
+                            </p>
+                        </div>
+                        <div class="advantages__img"></div>                    </li>
+                    <li class="advantages__item advantages__item_descr-right">
+                        <div class="advantages__descr">
+                            <h3 class="advantages__item-title title-item">Высокий уровень безопасности</h3>
+                            <p class="advantages__item-text">
+                                Мы&nbsp;заботимся о&nbsp;вашей безопасности: на&nbsp;территории комплекса установлены
+                                современные системы видеонаблюдения и&nbsp;контроля доступа. Круглосуточная охрана
+                                обеспечивает спокойствие и&nbsp;защиту для всех жильцов.
+                            </p>
+                        </div>
+                        <div class="advantages__img"></div>                    </li>
                 </ul>
             </div>
         </section>

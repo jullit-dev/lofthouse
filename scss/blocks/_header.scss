@@ -7,7 +7,6 @@
     }
 
     &_main {
- 
         min-height: 840px;
         background: linear-gradient(
             180deg,
@@ -85,20 +84,17 @@
 
     &__title {
         position: relative;
-        max-width: 556px;
         margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 171px;
-        text-align: center;
-        font-size: 48px;
-        font-family: $font-accent;
-        color: $accent;
-        font-weight: 700;
 
         @include tablet {
-            font-size: 32px;
             padding-bottom: 130px;
         }
+    }
+
+    &__title_index {
+        max-width: 556px;
     }
 
     &__title-scroll {

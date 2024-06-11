@@ -15,7 +15,7 @@
 
 // Цвет
 [class*="ground-pane"] {
-    filter: grayscale(1) sepia(10%);
+    filter: grayscale(1) sepia(10%) invert(100%);
 }
 
 /* Baloon */
