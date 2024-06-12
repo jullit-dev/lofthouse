@@ -10,18 +10,25 @@
 @import './blocks/nav';
 @import './blocks/nav-icon';
 @import './blocks/info';
-@import './blocks/benefits';
-@import './blocks/apartments';
 @import './blocks/card';
 @import './blocks/form';
-@import './blocks/cta';
-@import './blocks/video';
 @import './blocks/section-map';
 @import './blocks/yandex-map';
 @import './blocks/feedback';
 @import './blocks/footer';
 @import './blocks/social';
 
+// index
+@import './blocks/benefits';
+@import './blocks/apartments';
+@import './blocks/cta';
+@import './blocks/video';
 
+// about
 @import './blocks/about';
 @import './blocks/advantages';
+
+// district
+@import './blocks/district-slider';
+@import './blocks/slider';
+@import './blocks/district';
