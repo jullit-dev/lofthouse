@@ -922,6 +922,11 @@ a:hover {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
 }
+@media screen and (max-width: 639px) {
+  .advantages__list {
+    grid-template-rows: auto;
+  }
+}
 .advantages__item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
