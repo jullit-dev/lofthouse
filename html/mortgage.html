@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="./../img/favicon.png">
     <link rel="stylesheet" href="./../css/main.css">
     <script defer src="./../js/main.js"></script>
+    <script defer src="./../js/steps.js"></script>
 </head>
 
 <body>
@@ -38,22 +39,19 @@
     </header>
 
     <main>
-        <div class="dev">
-            Раздел в разработке
-        </div>
         <section class="mortgage-header">
             <div class="container">
                 <h1 class="mortgage-header__title title-main">
                     Ипотека в&nbsp;LoftHouse
                 </h1>
-                <p>
+                <p class="mortgage-header__text">
                     Мы&nbsp;понимаем, что покупка квартиры&nbsp;&mdash; это важное и&nbsp;ответственное решение, поэтому
                     компания LoftHouse
                     предлагает своим клиентам выгодные условия ипотечного кредитования. Мы&nbsp;сотрудничаем
                     с&nbsp;ведущими
                     банками страны, чтобы вы&nbsp;могли приобрести свою мечту на&nbsp;самых выгодных условиях.
                 </p>
-                <p>
+                <p class="mortgage-header__text">
                     Ипотека от&nbsp;LoftHouse&nbsp;&mdash; это простой и&nbsp;удобный способ стать владельцем квартиры
                     в&nbsp;центре города.
                 </p>
@@ -154,80 +152,82 @@
                 <h2 class="mortgage-steps__title title-section">
                     Как оформить ипотеку в&nbsp;LoftHouse
                 </h2>
-                <ul class="mortgage-steps__numbers">
-                    <li class="mortgage-steps__number">
-                        <button class="mortgage-steps__btn">
-                            1 шаг
-                        </button>
-                    </li>
-                    <li class="mortgage-steps__number">
-                        <button class="mortgage-steps__btn">
-                            2 шаг
-                        </button>
-                    </li>
-                    <li class="mortgage-steps__number">
-                        <button class="mortgage-steps__btn">
-                            3 шаг
-                        </button>
-                    </li>
-                    <li class="mortgage-steps__number">
-                        <button class="mortgage-steps__btn">
-                            4 шаг
-                        </button>
-                    </li>
-                    <li class="mortgage-steps__number">
-                        <button class="mortgage-steps__btn">
-                            5 шаг
-                        </button>
-                    </li>
-                </ul>
-                <ul class="mortgage-steps__list">
-                    <li class="mortgage-steps__item">
-                        <h3 class="mortgage-steps__item-title">
-                            Консультация с&nbsp;менеджером
-                        </h3>
-                        <p class="mortgage-steps__item-text">
-                            Свяжитесь с&nbsp;нашими менеджерами, чтобы получить подробную информацию о&nbsp;доступных
-                            программах ипотечного кредитования и&nbsp;условиях сотрудничества с&nbsp;банками-партнерами
-                        </p>
-                    </li>
-                    <li class="mortgage-steps__item">
-                        <h3 class="mortgage-steps__item-title">
-                            Подготовка документов
-                        </h3>
-                        <p class="mortgage-steps__item-text">
-                            Мы&nbsp;поможем вам собрать все необходимые документы для подачи заявки на&nbsp;ипотеку,
-                            чтобы процесс оформления прошел быстро и&nbsp;без лишних хлопот
-                        </p>
-                    </li>
-                    <li class="mortgage-steps__item">
-                        <h3 class="mortgage-steps__item-title">
-                            Подача заявки в&nbsp;банк
-                        </h3>
-                        <p class="mortgage-steps__item-text">
-                            Ваши документы будут отправлены в&nbsp;банк для рассмотрения. В&nbsp;кратчайшие сроки
-                            вы&nbsp;получите ответ по&nbsp;вашей заявке
-                        </p>
-                    </li>
-                    <li class="mortgage-steps__item">
-                        <h3 class="mortgage-steps__item-title">
-                            Оформление сделки
-                        </h3>
-                        <p class="mortgage-steps__item-text">
-                            После одобрения заявки мы&nbsp;поможем вам с&nbsp;оформлением всех необходимых документов
-                            и&nbsp;заключением договора купли-продажи
-                        </p>
-                    </li>
-                    <li class="mortgage-steps__item">
-                        <h3 class="mortgage-steps__item-title">
-                            Получение ключей от&nbsp;новой квартиры
-                        </h3>
-                        <p class="mortgage-steps__item-text">
-                            Завершив все формальности, вы&nbsp;станете обладателем квартиры в&nbsp;жилом комплексе
-                            LoftHouse и&nbsp;сможете наслаждаться жизнью в&nbsp;новом доме
-                        </p>
-                    </li>
-                </ul>
+                <div class="mortgage-steps__wrapper">
+                    <ul class="mortgage-steps__numbers">
+                        <li class="mortgage-steps__number">
+                            <button class="mortgage-steps__btn mortgage-steps__btn_active" data-path="step-1">
+                                1 шаг
+                            </button>
+                        </li>
+                        <li class="mortgage-steps__number">
+                            <button class="mortgage-steps__btn" data-path="step-2">
+                                2 шаг
+                            </button>
+                        </li>
+                        <li class="mortgage-steps__number">
+                            <button class="mortgage-steps__btn" data-path="step-3">
+                                3 шаг
+                            </button>
+                        </li>
+                        <li class="mortgage-steps__number">
+                            <button class="mortgage-steps__btn" data-path="step-4">
+                                4 шаг
+                            </button>
+                        </li>
+                        <li class="mortgage-steps__number">
+                            <button class="mortgage-steps__btn" data-path="step-5">
+                                5 шаг
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="mortgage-steps__list">
+                        <li class="mortgage-steps__item mortgage-steps__item_active" data-target="step-1">
+                            <h3 class="mortgage-steps__item-title title-item">
+                                Консультация с&nbsp;менеджером
+                            </h3>
+                            <p class="mortgage-steps__item-text">
+                                Свяжитесь с&nbsp;нашими менеджерами, чтобы получить подробную информацию о&nbsp;доступных
+                                программах ипотечного кредитования и&nbsp;условиях сотрудничества с&nbsp;банками-партнерами
+                            </p>
+                        </li>
+                        <li class="mortgage-steps__item" data-target="step-2">
+                            <h3 class="mortgage-steps__item-title title-item">
+                                Подготовка документов
+                            </h3>
+                            <p class="mortgage-steps__item-text">
+                                Мы&nbsp;поможем вам собрать все необходимые документы для подачи заявки на&nbsp;ипотеку,
+                                чтобы процесс оформления прошел быстро и&nbsp;без лишних хлопот
+                            </p>
+                        </li>
+                        <li class="mortgage-steps__item" data-target="step-3">
+                            <h3 class="mortgage-steps__item-title title-item">
+                                Подача заявки в&nbsp;банк
+                            </h3>
+                            <p class="mortgage-steps__item-text">
+                                Ваши документы будут отправлены в&nbsp;банк для рассмотрения. В&nbsp;кратчайшие сроки
+                                вы&nbsp;получите ответ по&nbsp;вашей заявке
+                            </p>
+                        </li>
+                        <li class="mortgage-steps__item" data-target="step-4">
+                            <h3 class="mortgage-steps__item-title title-item">
+                                Оформление сделки
+                            </h3>
+                            <p class="mortgage-steps__item-text">
+                                После одобрения заявки мы&nbsp;поможем вам с&nbsp;оформлением всех необходимых документов
+                                и&nbsp;заключением договора купли-продажи
+                            </p>
+                        </li>
+                        <li class="mortgage-steps__item" data-target="step-5">
+                            <h3 class="mortgage-steps__item-title title-item">
+                                Получение ключей от&nbsp;новой квартиры
+                            </h3>
+                            <p class="mortgage-steps__item-text">
+                                Завершив все формальности, вы&nbsp;станете обладателем квартиры в&nbsp;жилом комплексе
+                                LoftHouse и&nbsp;сможете наслаждаться жизнью в&nbsp;новом доме
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 

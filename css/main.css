@@ -1023,7 +1023,7 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%);
+  background: linear-gradient(180deg, #242B33 2%, rgba(36, 43, 51, 0) 50%, #242B33 100%);
 }
 .district-slider__title {
   position: absolute;
@@ -1065,4 +1065,110 @@ a:hover {
 }
 .district__text:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.mortgage-header {
+  padding-bottom: 120px;
+}
+.mortgage-header__title {
+  margin-bottom: 30px;
+}
+.mortgage-header__text {
+  line-height: 1.5;
+  color: #E7E7E7;
+  font-family: "Roboto", sans-serif;
+}
+.mortgage-header__text:not(:first-child) {
+  margin-bottom: 10px;
+}
+
+.mortgage-advantages__title {
+  margin-bottom: 88px;
+}
+.mortgage-advantages__item-title {
+  margin-bottom: 15px;
+}
+
+.mortgage-steps {
+  padding-bottom: 160px;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-steps {
+    background: linear-gradient(180deg, #242B33 3%, rgba(45, 52, 60, 0.7) 15%, rgba(45, 52, 60, 0.4) 50%, rgba(45, 52, 60, 0.7) 85%, #242B33 97%), linear-gradient(90deg, #242B33 3%, rgba(45, 52, 60, 0.7) 15%, rgba(45, 52, 60, 0.4) 50%, rgba(45, 52, 60, 0.7) 85%, #242B33 97%), url("./../../img/mortgage-steps/table.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+  }
+}
+.mortgage-steps__title {
+  margin-bottom: 88px;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-steps__title {
+    margin-bottom: 44px;
+  }
+}
+.mortgage-steps__wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  gap: 30px;
+  min-height: 330px;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-steps__wrapper {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+}
+.mortgage-steps__wrapper::after {
+  content: "";
+  background: linear-gradient(180deg, #242B33 3%, rgba(45, 52, 60, 0.4) 15%, rgba(45, 52, 60, 0.1) 50%, rgba(45, 52, 60, 0.4) 85%, #242B33 97%), linear-gradient(90deg, #242B33 3%, rgba(45, 52, 60, 0.4) 15%, rgba(45, 52, 60, 0.1) 50%, rgba(45, 52, 60, 0.4) 85%, #242B33 97%), url("./../../img/mortgage-steps/table.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-steps__wrapper::after {
+    display: none;
+  }
+}
+.mortgage-steps__numbers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-steps__numbers {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+.mortgage-steps__number {
+  font-size: 20px;
+  text-align: center;
+}
+.mortgage-steps__btn {
+  padding: 7px 15px;
+  border-bottom: 1px solid transparent;
+}
+.mortgage-steps__btn_active {
+  color: #D4C17F;
+}
+.mortgage-steps__btn:hover {
+  border-color: #D4C17F;
+}
+.mortgage-steps__item {
+  display: none;
+  padding: 20px;
+}
+.mortgage-steps__item_active {
+  display: block;
+}
+.mortgage-steps__item-title {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=main.css.map */
