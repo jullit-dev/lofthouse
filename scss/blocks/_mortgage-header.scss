@@ -1,8 +1,16 @@
 .mortgage-header {
     padding-bottom: 120px;
 
+    @include tablet {
+        padding-bottom: 60px;
+    }
+
     &__title {
         margin-bottom: 30px;
+
+        @include tablet {
+            margin-bottom: 15px;
+        }
     }
 
     &__text {

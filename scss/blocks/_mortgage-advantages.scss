@@ -1,9 +1,36 @@
 .mortgage-advantages {
     &__title {
         margin-bottom: 88px;
+
+        @include tablet {
+            margin-bottom: 44px;
+        }
     }
 
+    &__list {
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+    }
+
+    &__item {
+        padding: 30px;
+        box-shadow: 10px -10px 0.9em #161b20, -10px 10px 0.9em #1e252c;
+        border: 1px solid $accent;
+
+        @include mobile {
+            padding: 15px;
+        }
+    }
+
+    
     &__item-title {
         margin-bottom: 15px;
+        font-size: 20px;
+
+        @include mobile {
+            margin-bottom: 7px;
+            font-size: 18px;
+        }
     }
 }

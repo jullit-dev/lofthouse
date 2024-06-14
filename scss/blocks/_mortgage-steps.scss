@@ -1,6 +1,10 @@
 .mortgage-steps {
     padding-bottom: 160px;
 
+    @include tablet {
+        padding-bottom: 70px;
+    }
+
     @include mobile {
         background: linear-gradient(
             180deg,
@@ -27,7 +31,7 @@
     &__title {
         margin-bottom: 88px;
 
-        @include mobile {
+        @include tablet {
             margin-bottom: 44px;
         }
     }
@@ -83,7 +87,7 @@
         @include mobile {
             flex-direction: row;
             justify-content: flex-start;
-            gap: 10px;
+
         }
     }
 
