@@ -1,15 +1,9 @@
-.mortgage-header {
-    padding-bottom: 110px;
-
-    @include tablet {
-        padding-bottom: 60px;
-    }
-
+.catalog-header {
     &__title {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
 
         @include tablet {
-            margin-bottom: 15px;
+            margin-bottom: 35px;
         }
     }
 
@@ -18,7 +12,7 @@
         color: $muted;
         font-family: $font-secondary;
 
-        &:not(:first-child) {
+        &:not(:last-child) {
             margin-bottom: 10px;
         }
     }

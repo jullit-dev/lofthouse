@@ -458,13 +458,19 @@ a:hover {
 .card:hover::after {
   opacity: 1;
 }
-.card__title {
+.card__descr {
   position: absolute;
-  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
   left: 50px;
   right: 50px;
   bottom: 44px;
+}
+.card__title {
   font-size: 24px;
+  transition: color 0.2s ease-in;
 }
 @media screen and (max-width: 959px) {
   .card__title {
@@ -473,6 +479,14 @@ a:hover {
     bottom: 30px;
     right: 30px;
   }
+}
+.card:hover .card__title {
+  color: #D4C17F;
+}
+.card__btn {
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 10;
 }
 .card__img {
   position: relative;
@@ -1073,7 +1087,7 @@ a:hover {
 }
 
 .mortgage-header {
-  padding-bottom: 120px;
+  padding-bottom: 110px;
 }
 @media screen and (max-width: 959px) {
   .mortgage-header {
@@ -1217,4 +1231,33 @@ a:hover {
 }
 .mortgage-steps__item-title {
   margin-bottom: 15px;
+}
+
+.catalog-header__title {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 959px) {
+  .catalog-header__title {
+    margin-bottom: 35px;
+  }
+}
+.catalog-header__text {
+  line-height: 1.5;
+  color: #E7E7E7;
+  font-family: "Roboto", sans-serif;
+}
+.catalog-header__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.catalog__apartments {
+  padding: 120px 0;
+}
+.catalog__apartments::before {
+  display: none;
+}
+@media screen and (max-width: 959px) {
+  .catalog__apartments {
+    padding: 60px 0;
+  }
 }/*# sourceMappingURL=main.css.map */

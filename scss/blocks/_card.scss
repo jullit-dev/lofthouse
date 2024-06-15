@@ -31,13 +31,20 @@
         opacity: 1;
     }
 
-    &__title {
+    &__descr {
         position: absolute;
-        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 10;
         left: 50px;
         right: 50px;
         bottom: 44px;
+    }
+
+    &__title {
         font-size: 24px;
+        transition: color .2s ease-in;
 
         @include tablet {
             font-size: 20px;
@@ -45,6 +52,15 @@
             bottom: 30px;
             right: 30px;
         }
+    }
+ 
+    &:hover .card__title {
+        color: $accent;
+    }
+
+    &__btn {
+        width: max-content;
+        z-index: 10;
     }
 
     &__img {
