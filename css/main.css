@@ -1251,14 +1251,14 @@ a:hover {
 }
 
 .catalog__apartments {
-  padding: 120px 0;
+  padding-top: 120px;
 }
 .catalog__apartments::before {
   display: none;
 }
 @media screen and (max-width: 959px) {
   .catalog__apartments {
-    padding: 60px 0;
+    padding-top: 60px;
   }
 }
 
