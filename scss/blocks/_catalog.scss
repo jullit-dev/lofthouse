@@ -1,0 +1,13 @@
+.catalog {
+    &__apartments {
+        padding: 120px 0;
+
+        &::before {
+            display: none;
+        }
+
+        @include tablet {
+            padding: 60px 0;
+        }
+    }
+}

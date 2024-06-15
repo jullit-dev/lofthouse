@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" href="./../img/favicon.png">
         <link rel="stylesheet" href="./../css/main.css">
         <script defer src="./../js/main.js"></script>
+        <script defer src="./../js/catalog-modal.js"></script>
     </head>
 <body>
     <header class="header">
@@ -36,9 +37,67 @@
     </header>
 
     <main>
-        <div class="dev">
-            Раздел в разработке
-        </div>
+        <section class="catalog-header">
+            <div class="container">
+                <h1 class="catalog-header__title title-main">Каталог квартир в&nbsp;ЖК&nbsp;LoftHouse: найдите идеальное жилье для себя</h1>
+                <p class="catalog-header__text">
+                    Наш каталог предлагает квартиры различных планировок и&nbsp;размеров, начиная от&nbsp;уютных однокомнатных апартаментов до&nbsp;просторных пентхаусов. Мы&nbsp;предлагаем площади от&nbsp;40&nbsp;до&nbsp;170&nbsp;кв.&nbsp;м, чтобы каждый жилец мог выбрать оптимальное жилье в&nbsp;соответствии с&nbsp;его потребностями и&nbsp;предпочтениями.                </p>
+                <p class="catalog-header__text">
+                    Наша команда специалистов по&nbsp;недвижимости всегда готова помочь вам выбрать идеальное жилье и&nbsp;ответить на&nbsp;все ваши вопросы.
+                </p>
+                <p class="catalog-header__text"></p>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__apartments apartments">
+                    <h2 class="apartments__title title-section">Наши квартиры</h2>
+                    <ul class="apartments__list">
+                        <li class="apartments__item">
+                            <div class="card">
+                                <div class="card__descr">
+                                    <h3 class="card__title">Пентхаус &ldquo;Loft Олимп&rdquo;</h3>
+                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                </div>
+                                <img class="card__img" srcset="./../img/apartments/01@2x.jpg 2x" src="./../img/apartments/01.jpg"
+                                    alt="Фотография пентхауса Loft Олимп">
+                            </div>
+                        </li>
+                        <li class="apartments__item">
+                            <div class="card">
+                                <div class="card__descr">
+                                    <h3 class="card__title">Апартаменты &ldquo;Nice Loft&rdquo;</h3>
+                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                </div>
+                                <img class="card__img" srcset="./../img/apartments/02@2x.jpg 2x" src="./../img/apartments/02.jpg"
+                                    alt="Фотография апартаментов Nice Loft">
+                            </div>
+                        </li>
+                        <li class="apartments__item">
+                            <div class="card">
+                                <div class="card__descr">
+                                    <h3 class="card__title">Апартаменты &ldquo;Loft Studio&rdquo;</h3>
+                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                </div>
+                                <img class="card__img" srcset="./../img/apartments/03@2x.jpg 2x" src="./../img/apartments/03.jpg"
+                                    alt="Фотография апартаментов Loft Studio">
+                            </div>
+                        </li>
+                        <li class="apartments__item">
+                            <div class="card">
+                                <div class="card__descr">
+                                    <h3 class="card__title">Loft квартира &ldquo;Престиж&rdquo;</h3>
+                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                </div>
+                                <img class="card__img" srcset="./../img/apartments/04@2x.jpg 2x" src="./../img/apartments/04.jpg"
+                                    alt="Фотография лофт квартиры Престиж">
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

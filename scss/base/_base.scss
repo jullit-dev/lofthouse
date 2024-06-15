@@ -43,6 +43,10 @@ body {
     background-color: $dark;
     color: $white;
     font-size: 16px;
+
+    @include tablet {
+        font-size: 14px;
+    }
 }
 
 a {

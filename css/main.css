@@ -119,6 +119,11 @@ body {
   color: #fff;
   font-size: 16px;
 }
+@media screen and (max-width: 959px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 a {
   color: #fff;
@@ -453,13 +458,19 @@ a:hover {
 .card:hover::after {
   opacity: 1;
 }
-.card__title {
+.card__descr {
   position: absolute;
-  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
   left: 50px;
   right: 50px;
   bottom: 44px;
+}
+.card__title {
   font-size: 24px;
+  transition: color 0.2s ease-in;
 }
 @media screen and (max-width: 959px) {
   .card__title {
@@ -468,6 +479,14 @@ a:hover {
     bottom: 30px;
     right: 30px;
   }
+}
+.card:hover .card__title {
+  color: #D4C17F;
+}
+.card__btn {
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 10;
 }
 .card__img {
   position: relative;
@@ -1068,10 +1087,20 @@ a:hover {
 }
 
 .mortgage-header {
-  padding-bottom: 120px;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 959px) {
+  .mortgage-header {
+    padding-bottom: 60px;
+  }
 }
 .mortgage-header__title {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 959px) {
+  .mortgage-header__title {
+    margin-bottom: 15px;
+  }
 }
 .mortgage-header__text {
   line-height: 1.5;
@@ -1085,12 +1114,44 @@ a:hover {
 .mortgage-advantages__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .mortgage-advantages__title {
+    margin-bottom: 44px;
+  }
+}
+.mortgage-advantages__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+}
+.mortgage-advantages__item {
+  padding: 30px;
+  box-shadow: 10px -10px 0.9em #161b20, -10px 10px 0.9em #1e252c;
+  border: 1px solid #D4C17F;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-advantages__item {
+    padding: 15px;
+  }
+}
 .mortgage-advantages__item-title {
   margin-bottom: 15px;
+  font-size: 20px;
+}
+@media screen and (max-width: 639px) {
+  .mortgage-advantages__item-title {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
 }
 
 .mortgage-steps {
   padding-bottom: 160px;
+}
+@media screen and (max-width: 959px) {
+  .mortgage-steps {
+    padding-bottom: 70px;
+  }
 }
 @media screen and (max-width: 639px) {
   .mortgage-steps {
@@ -1103,7 +1164,7 @@ a:hover {
 .mortgage-steps__title {
   margin-bottom: 88px;
 }
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 959px) {
   .mortgage-steps__title {
     margin-bottom: 44px;
   }
@@ -1145,7 +1206,6 @@ a:hover {
   .mortgage-steps__numbers {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
   }
 }
 .mortgage-steps__number {
@@ -1171,4 +1231,33 @@ a:hover {
 }
 .mortgage-steps__item-title {
   margin-bottom: 15px;
+}
+
+.catalog-header__title {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 959px) {
+  .catalog-header__title {
+    margin-bottom: 35px;
+  }
+}
+.catalog-header__text {
+  line-height: 1.5;
+  color: #E7E7E7;
+  font-family: "Roboto", sans-serif;
+}
+.catalog-header__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.catalog__apartments {
+  padding: 120px 0;
+}
+.catalog__apartments::before {
+  display: none;
+}
+@media screen and (max-width: 959px) {
+  .catalog__apartments {
+    padding: 60px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
