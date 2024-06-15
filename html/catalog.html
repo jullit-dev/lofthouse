@@ -57,7 +57,7 @@
                             <div class="card">
                                 <div class="card__descr">
                                     <h3 class="card__title">Пентхаус &ldquo;Loft Олимп&rdquo;</h3>
-                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                    <button class="card__btn form__btn" type="button" value="1">Подробнее</button>
                                 </div>
                                 <img class="card__img" srcset="./../img/apartments/01@2x.jpg 2x" src="./../img/apartments/01.jpg"
                                     alt="Фотография пентхауса Loft Олимп">
@@ -67,7 +67,7 @@
                             <div class="card">
                                 <div class="card__descr">
                                     <h3 class="card__title">Апартаменты &ldquo;Nice Loft&rdquo;</h3>
-                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                    <button class="card__btn form__btn" type="button" value="2">Подробнее</button>
                                 </div>
                                 <img class="card__img" srcset="./../img/apartments/02@2x.jpg 2x" src="./../img/apartments/02.jpg"
                                     alt="Фотография апартаментов Nice Loft">
@@ -77,7 +77,7 @@
                             <div class="card">
                                 <div class="card__descr">
                                     <h3 class="card__title">Апартаменты &ldquo;Loft Studio&rdquo;</h3>
-                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                    <button class="card__btn form__btn" type="button" value="3">Подробнее</button>
                                 </div>
                                 <img class="card__img" srcset="./../img/apartments/03@2x.jpg 2x" src="./../img/apartments/03.jpg"
                                     alt="Фотография апартаментов Loft Studio">
@@ -87,18 +87,32 @@
                             <div class="card">
                                 <div class="card__descr">
                                     <h3 class="card__title">Loft квартира &ldquo;Престиж&rdquo;</h3>
-                                    <button class="card__btn form__btn" type="button">Подробнее</button>
+                                    <button class="card__btn form__btn" type="button" value="4">Подробнее</button>
                                 </div>
                                 <img class="card__img" srcset="./../img/apartments/04@2x.jpg 2x" src="./../img/apartments/04.jpg"
                                     alt="Фотография лофт квартиры Престиж">
                             </div>
                         </li>
-                    </ul>
-                    
+                    </ul>         
                 </div>
             </div>
         </section>
     </main>
+
+    <div id="modal" class="modal">
+        <div class="modal__box">
+            <h2 class="visually-hidden">Карточка с описанием квартиры</h2>
+            <div class="modal__header">
+                <h3 class="modal__title title-item"></h3>
+                <button class="modal__btn-close">
+                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2332 7.73333L21.2665 6.76666L14.4998 13.5334L7.73318 6.7667L6.76652 7.73336L13.5332 14.5L6.76654 21.2667L7.73321 22.2333L14.4998 15.4667L21.2665 22.2334L22.2332 21.2667L15.4665 14.5L22.2332 7.73333Z" fill="#B0B0B0"/>
+                  </svg>            
+                </button>
+            </div>
+            <div class="modal__descr"></div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -159,8 +173,6 @@
             </div>
         </div>
     </footer>
-
-
     
 </body>
 </html>

@@ -1260,4 +1260,51 @@ a:hover {
   .catalog__apartments {
     padding: 60px 0;
   }
+}
+
+.modal {
+  position: fixed;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(3, 3, 3, 0.6);
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+.modal__box {
+  max-width: 450px;
+  z-index: 100;
+  padding: 15px 15px 15px 30px;
+  margin: 20px;
+  background-color: #242B33;
+  transform: scale(0);
+  transition: transform 0.5s ease-in;
+}
+.modal__header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.modal__title {
+  margin-right: 20px;
+}
+.modal__btn-close {
+  margin-left: auto;
+}
+.modal__imgs {
+  margin-bottom: 20px;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal__box {
+  transform: scale(1);
 }/*# sourceMappingURL=main.css.map */
