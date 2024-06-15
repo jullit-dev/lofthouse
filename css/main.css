@@ -1300,6 +1300,26 @@ a:hover {
 .modal__imgs {
   margin-bottom: 20px;
 }
+.modal__text {
+  line-height: 1.3;
+}
+.modal__about:not(:last-child) {
+  margin-bottom: 10px;
+}
+.modal__about-title {
+  font-size: 18px;
+  color: #D4C17F;
+}
+@media screen and (max-width: 959px) {
+  .modal__about-title {
+    font-size: 16px;
+  }
+}
+.modal__item-title {
+  color: #D4C17F;
+  margin-right: 5px;
+}
+
 .modal.open {
   visibility: visible;
   opacity: 1;
