@@ -53,8 +53,28 @@ a {
     color: $white;
     transition: color .2s ease-in;
 
-    &:hover {
+    &:hover:not(:focus-visible) {
         color: $accent;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-visible:not(:hover) {
+        outline: solid $accent 1px;
+        outline-offset: 5px;
+    }
+}
+
+button {
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-visible:not(:hover) {
+        outline: solid $accent 1px;
+        outline-offset: 5px;
     }
 }
 
