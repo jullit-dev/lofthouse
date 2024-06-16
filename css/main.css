@@ -129,8 +129,23 @@ a {
   color: #fff;
   transition: color 0.2s ease-in;
 }
-a:hover {
+a:hover:not(:focus-visible) {
   color: #D4C17F;
+}
+a:focus-visible {
+  outline: none;
+}
+a:focus-visible:not(:hover) {
+  outline: solid #D4C17F 1px;
+  outline-offset: 5px;
+}
+
+button:focus-visible {
+  outline: none;
+}
+button:focus-visible:not(:hover) {
+  outline: solid #D4C17F 1px;
+  outline-offset: 5px;
 }
 
 .container {
@@ -394,6 +409,8 @@ a:hover {
 .info {
   position: relative;
   font-size: 18px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .info:first-child {
   justify-self: end;
@@ -931,7 +948,6 @@ a:hover {
 
 .advantages {
   padding-top: 40px;
-  padding-bottom: 120px;
 }
 .advantages__title {
   margin-bottom: 60px;
@@ -1193,7 +1209,7 @@ a:hover {
 }
 .mortgage-steps__wrapper::after {
   content: "";
-  background: linear-gradient(180deg, #242B33 3%, rgba(45, 52, 60, 0.4) 15%, rgba(45, 52, 60, 0.1) 50%, rgba(45, 52, 60, 0.4) 85%, #242B33 97%), linear-gradient(90deg, #242B33 3%, rgba(45, 52, 60, 0.4) 15%, rgba(45, 52, 60, 0.1) 50%, rgba(45, 52, 60, 0.4) 85%, #242B33 97%), url("./../../img/mortgage-steps/table.jpg");
+  background: linear-gradient(180deg, #242B33 3%, rgba(45, 52, 60, 0.4) 15%, rgba(45, 52, 60, 0.1) 50%, rgba(45, 52, 60, 0.4) 85%, #242B33 97%), linear-gradient(90deg, #242B33 3%, rgba(45, 52, 60, 0.4) 15%, rgba(45, 52, 60, 0.1) 50%, rgba(45, 52, 60, 0.4) 85%, #242B33 97%), url("./../img/mortgage-steps/table.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;

@@ -1,6 +1,7 @@
 .info {
     position: relative;
     font-size: 18px;
+    width: max-content;
 
     &:first-child {
         justify-self: end;
