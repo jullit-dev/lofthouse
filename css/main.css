@@ -483,10 +483,18 @@ a:hover {
 .card:hover .card__title {
   color: #D4C17F;
 }
-.card__btn {
+.card__btn.form__btn {
   width: -moz-max-content;
   width: max-content;
+  height: -moz-max-content;
+  height: max-content;
   z-index: 10;
+}
+@media screen and (max-width: 639px) {
+  .card__btn.form__btn {
+    font-size: 14px;
+    padding: 7px 7px;
+  }
 }
 .card__img {
   position: relative;
@@ -1328,4 +1336,41 @@ a:hover {
 
 .modal.open .modal__box {
   transform: scale(1);
+}
+
+.contacts-header__title {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 959px) {
+  .contacts-header__title {
+    margin-bottom: 35px;
+  }
+}
+.contacts-header__text {
+  line-height: 1.5;
+}
+
+.contacts-support {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+@media screen and (max-width: 959px) {
+  .contacts-support {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.contacts__title {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 959px) {
+  .contacts__title {
+    margin-bottom: 35px;
+  }
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.contacts-item__title {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

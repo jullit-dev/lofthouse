@@ -35,7 +35,7 @@ const openModal = (e) => {
                         <p class="modal__item-text"><span class="modal__item-title">Высота потолков:</span>4,5 м</p>
                     </li>
                     <li class="modal__item">
-                        <p class="modal__item-text"><span class="modal__item-title">Вид из окон:</span>панорамный вид на набережную реки Фонтанка и исторический центр города</p>
+                        <p class="modal__item-text"><span class="modal__item-title">Вид из окон:</span>панорамный вид на набережную реки Фонтанки и исторический центр города</p>
                     </li>
                 </ul>
             </div>
@@ -133,7 +133,7 @@ const openModal = (e) => {
                     </li>
                     <li class="modal__item">
                         <p class="modal__item-text"><span class="modal__item-title">Вид из&nbsp;окон:</span>вид на&nbsp;Набережную реки
-                                Фонтанка и&nbsp;зеленую зону комплекса</p>
+                                Фонтанки и&nbsp;зеленую зону комплекса</p>
                     </li>
                 </ul>
             </div>
@@ -329,7 +329,7 @@ const openModal = (e) => {
                     </li>
                     <li class="modal__item">
                         <p class="modal__item-text"><span class="modal__item-title">Вид из&nbsp;окон:</span>вид
-                            на&nbsp;Набережную реки Фонтанка и&nbsp;исторический центр города</p>
+                            на&nbsp;Набережную реки Фонтанки и&nbsp;исторический центр города</p>
                     </li>
                 </ul>
             </div>

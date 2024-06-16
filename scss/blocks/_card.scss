@@ -58,9 +58,15 @@
         color: $accent;
     }
 
-    &__btn {
+    &__btn.form__btn {
         width: max-content;
+        height: max-content;
         z-index: 10;
+
+        @include mobile {
+            font-size: 14px;
+            padding: 7px 7px;
+        }
     }
 
     &__img {
