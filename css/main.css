@@ -1179,7 +1179,7 @@ button:focus-visible:not(:hover) {
 }
 @media screen and (max-width: 639px) {
   .mortgage-steps {
-    background: linear-gradient(180deg, #242B33 3%, rgba(45, 52, 60, 0.7) 15%, rgba(45, 52, 60, 0.4) 50%, rgba(45, 52, 60, 0.7) 85%, #242B33 97%), linear-gradient(90deg, #242B33 3%, rgba(45, 52, 60, 0.7) 15%, rgba(45, 52, 60, 0.4) 50%, rgba(45, 52, 60, 0.7) 85%, #242B33 97%), url("./../../img/mortgage-steps/table.jpg");
+    background: linear-gradient(180deg, #242B33 3%, rgba(45, 52, 60, 0.7) 15%, rgba(45, 52, 60, 0.4) 50%, rgba(45, 52, 60, 0.7) 85%, #242B33 97%), linear-gradient(90deg, #242B33 3%, rgba(45, 52, 60, 0.7) 15%, rgba(45, 52, 60, 0.4) 50%, rgba(45, 52, 60, 0.7) 85%, #242B33 97%), url("./../img/mortgage-steps/table.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
