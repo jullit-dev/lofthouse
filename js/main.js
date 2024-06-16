@@ -54,7 +54,7 @@ phoneInputs.forEach((input) => {
             }, 
             {
             iconLayout: 'default#image',
-            iconImageHref: './img/map/location-pin.svg',
+            iconImageHref: '/img/map/location-pin.svg',
             iconImageSize: [40, 40],
             iconImageOffset: [-20, -40]
         });

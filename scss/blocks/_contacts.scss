@@ -1,0 +1,27 @@
+.contacts {
+    &-support {
+        padding-top: 180px;
+        padding-bottom: 180px;
+
+        @include tablet {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 50px;
+
+        @include tablet {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &-item__title {
+        margin-bottom: 10px;
+    }
+}
