@@ -15,7 +15,7 @@
     transition: opacity .3s ease-in, visibility .3s ease-in;
 
     &__box {
-        max-width: 450px;
+        max-width: 550px;
         z-index: 100;
         padding: 15px 15px 15px 30px;
         margin: 20px;
@@ -46,12 +46,13 @@
     }
 
     &__about:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 24px;
     }
 
     &__about-title {
         font-size: 18px;
         color: $accent;
+        margin-bottom: 4px;
 
         @include tablet {
             font-size: 16px;
