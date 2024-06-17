@@ -1,19 +1,19 @@
 .catalog-header {
-    &__title {
-        margin-bottom: 60px;
+  &__title {
+    margin-bottom: 60px;
 
-        @include tablet {
-            margin-bottom: 35px;
-        }
+    @include tablet {
+      margin-bottom: 35px;
     }
+  }
 
-    &__text {
-        line-height: 1.5;
-        color: $muted;
-        font-family: $font-secondary;
+  &__text {
+    line-height: 1.5;
+    color: $muted;
+    font-family: $font-secondary;
 
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
+  }
 }

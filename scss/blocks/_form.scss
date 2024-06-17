@@ -1,52 +1,52 @@
 .form {
-    &__input {
-        height: 50px;
-        padding: 12px;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.2);
-        color: $white;
-        font-size: 14px;
-        transition: background-color .2s ease-in;
+  &__input {
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $white;
+    font-size: 14px;
+    transition: background-color .2s ease-in;
 
-        &::placeholder {
-            color: $placeholder;
-        }
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        &:focus {
-            background-color: rgba(255, 255, 255, 0.25);
-        }
+    &::placeholder {
+      color: $placeholder;
     }
 
-    &__privacy {
-        font-size: 13px;
-        line-height: 1.23;
-        color: $muted;
-        text-align: center;
-        align-self: center;
-
-        &_bottom {
-            @include tablet {
-                grid-row: 4 / 5; 
-            }
-        }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
-    &__btn {
-        height: 50px;
-        font-size: 16px;
-        color: $white;
-        font-weight: 700;
-        text-align: center;
-        padding: 12px;
-        background-color: $accent;
-        transition: background-color .2s ease-in;
-
-        &:hover {
-            background-color: saturate($accent, 20%);
-        }
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.25);
     }
+  }
+
+  &__privacy {
+    font-size: 13px;
+    line-height: 1.23;
+    color: $muted;
+    text-align: center;
+    align-self: center;
+
+    &_bottom {
+      @include tablet {
+        grid-row: 4 / 5;
+      }
+    }
+  }
+
+  &__btn {
+    height: 50px;
+    font-size: 16px;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px;
+    background-color: $accent;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+      background-color: saturate($accent, 20%);
+    }
+  }
 }

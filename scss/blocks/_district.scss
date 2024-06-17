@@ -1,23 +1,21 @@
 .district {
-    background: linear-gradient(
-        180deg,
-        #242b33 12%,
-        rgba(45, 52, 60, 0.38) 51%,
-        #242b33 92%
-    );
+  background: linear-gradient(180deg,
+      #242b33 12%,
+      rgba(45, 52, 60, 0.38) 51%,
+      #242b33 92%);
 
-    &__text {
-        font-family: $font-secondary;
-        color: $muted;
-        line-height: 1.5;
+  &__text {
+    font-family: $font-secondary;
+    color: $muted;
+    line-height: 1.5;
 
-        @include tablet {
-            font-size: 14px;
-        }
-
-
-        &:not(:last-child ) {
-            margin-bottom: 10px;
-        }
+    @include tablet {
+      font-size: 14px;
     }
+
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }

@@ -1,31 +1,31 @@
 .section-map {
-    position: relative;
-    padding: 180px 0;
+  position: relative;
+  padding: 180px 0;
 
-    &::before {
-        content: 'V';
-        right: calc(50% + 555px);
-        transform: translate(50%, 0%);
-        line-height: 1;
-        @include decorNumber;
-        top: 180px;
-    }
+  &::before {
+    content: 'V';
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    line-height: 1;
+    @include decorNumber;
+    top: 180px;
+  }
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
+
+  &__title {
+    margin-bottom: 88px;
 
     @include tablet {
-        padding: 80px 0; 
+      margin-bottom: 44px;
     }
-
-
-    &__title {
-        margin-bottom: 88px;
-
-        @include tablet {
-            margin-bottom: 44px;
-        }
-    }
+  }
 }
 
 .map {
-    height: 358px;
-    background-color: #626262;
+  height: 358px;
+  background-color: #626262;
 }

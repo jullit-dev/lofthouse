@@ -1,25 +1,25 @@
 .mortgage-header {
-    padding-bottom: 110px;
+  padding-bottom: 110px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
 
     @include tablet {
-        padding-bottom: 60px;
+      margin-bottom: 15px;
     }
+  }
 
-    &__title {
-        margin-bottom: 30px;
+  &__text {
+    line-height: 1.5;
+    color: $muted;
+    font-family: $font-secondary;
 
-        @include tablet {
-            margin-bottom: 15px;
-        }
+    &:not(:first-child) {
+      margin-bottom: 10px;
     }
-
-    &__text {
-        line-height: 1.5;
-        color: $muted;
-        font-family: $font-secondary;
-
-        &:not(:first-child) {
-            margin-bottom: 10px;
-        }
-    }
+  }
 }

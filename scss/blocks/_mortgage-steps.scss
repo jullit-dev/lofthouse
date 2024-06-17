@@ -1,124 +1,116 @@
 .mortgage-steps {
-    padding-bottom: 160px;
+  padding-bottom: 160px;
+
+  @include tablet {
+    padding-bottom: 70px;
+  }
+
+  @include mobile {
+    background: linear-gradient(180deg,
+        $dark 3%,
+        rgba(45, 52, 60, 0.7) 15%,
+        rgba(45, 52, 60, 0.4) 50%,
+        rgba(45, 52, 60, 0.7) 85%,
+        $dark 97%),
+      linear-gradient(90deg,
+        $dark 3%,
+        rgba(45, 52, 60, 0.7) 15%,
+        rgba(45, 52, 60, 0.4) 50%,
+        rgba(45, 52, 60, 0.7) 85%,
+        $dark 97%),
+      url('./../img/mortgage-steps/table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  &__title {
+    margin-bottom: 88px;
 
     @include tablet {
-        padding-bottom: 70px;
+      margin-bottom: 44px;
     }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    gap: 30px;
+    min-height: 330px;
 
     @include mobile {
-        background: linear-gradient(
-            180deg,
-            $dark 3%,
-            rgba(45, 52, 60, 0.7) 15%,
-            rgba(45, 52, 60, 0.4) 50%,
-            rgba(45, 52, 60, 0.7) 85%,
-            $dark 97%
-        ),
-        linear-gradient(
-            90deg,
-            $dark 3%,
-            rgba(45, 52, 60, 0.7) 15%,
-            rgba(45, 52, 60, 0.4) 50%,
-            rgba(45, 52, 60, 0.7) 85%,
-            $dark 97%
-        ),
+      grid-template-columns: 1fr;
+      gap: 5px;
+      min-height: max-content;
+    }
+
+    &::after {
+      content: '';
+      background: linear-gradient(180deg,
+          $dark 3%,
+          rgba(45, 52, 60, 0.4) 15%,
+          rgba(45, 52, 60, 0.1) 50%,
+          rgba(45, 52, 60, 0.4) 85%,
+          $dark 97%),
+        linear-gradient(90deg,
+          $dark 3%,
+          rgba(45, 52, 60, 0.4) 15%,
+          rgba(45, 52, 60, 0.1) 50%,
+          rgba(45, 52, 60, 0.4) 85%,
+          $dark 97%),
         url('./../img/mortgage-steps/table.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom right;
-    }
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom right;
 
-    &__title {
-        margin-bottom: 88px;
-
-        @include tablet {
-            margin-bottom: 44px;
-        }
-    }
-
-    &__wrapper {
-        display: grid;
-        grid-template-columns: 100px 1fr 1fr;
-        gap: 30px;
-        min-height: 330px;
-
-        @include mobile {
-            grid-template-columns: 1fr;
-            gap: 5px;
-            min-height: max-content;
-        }
-        
-        &::after {
-            content: '';
-            background: linear-gradient(
-                180deg,
-                $dark 3%,
-                rgba(45, 52, 60, 0.4) 15%,
-                rgba(45, 52, 60, 0.1) 50%,
-                rgba(45, 52, 60, 0.4) 85%,
-                $dark 97%
-            ),
-            linear-gradient(
-                90deg,
-                $dark 3%,
-                rgba(45, 52, 60, 0.4) 15%,
-                rgba(45, 52, 60, 0.1) 50%,
-                rgba(45, 52, 60, 0.4) 85%,
-                $dark 97%
-            ),
-            url('./../img/mortgage-steps/table.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: bottom right;
-
-            @include mobile {
-                display: none;
-            }
-        }
-    }
-
-    &__numbers {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-
-        @include mobile {
-            flex-direction: row;
-            justify-content: flex-start;
-
-        }
-    }
-
-    &__number {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    &__btn {
-        padding: 7px 15px;
-        border-bottom: 1px solid transparent;
-        
-        &_active {
-            color: $accent;
-        }
-
-        &:hover {
-            border-color: $accent;
-        }
-    }
-
-    &__item {
+      @include mobile {
         display: none;
-        padding: 20px;
+      }
+    }
+  }
 
-        &_active {
-            display: block;
-        }
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include mobile {
+      flex-direction: row;
+      justify-content: flex-start;
+
+    }
+  }
+
+  &__number {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__btn {
+    padding: 7px 15px;
+    border-bottom: 1px solid transparent;
+
+    &_active {
+      color: $accent;
     }
 
-    &__item-title{
-        margin-bottom: 15px;
+    &:hover {
+      border-color: $accent;
     }
+  }
+
+  &__item {
+    display: none;
+    padding: 20px;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 15px;
+  }
 }

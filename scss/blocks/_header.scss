@@ -1,130 +1,128 @@
 .header {
-    padding-top: 30px;
-    padding-bottom: 74px;
+  padding-top: 30px;
+  padding-bottom: 74px;
+
+  @include tablet {
+    min-height: unset;
+  }
+
+  &_main {
+    min-height: 840px;
+    background: linear-gradient(180deg,
+        #242b33 12%,
+        rgba(45, 52, 60, 0.38) 51%,
+        #242b33 92%),
+      url("./../img/header/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top_mobile .header__logo {
+    margin-bottom: 50px;
+  }
+
+  &__top_mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $dark;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .header__nav {
+      display: block;
+    }
+
+    .nav__list {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+
+    .header__nav-btn {
+      position: fixed;
+      top: 50px;
+      right: 15px;
+    }
+  }
+
+  &__nav {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__nav-btn {
+    display: none;
 
     @include tablet {
-        min-height: unset;
+      display: block;
     }
+  }
 
-    &_main {
-        min-height: 840px;
-        background: linear-gradient(
-            180deg,
-            #242b33 12%,
-            rgba(45, 52, 60, 0.38) 51%,
-            #242b33 92%
-        ),
-        url("./../img/header/header-bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+  &__title {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 171px;
+
+    @include tablet {
+      padding-bottom: 130px;
     }
+  }
 
-    &__container {
-        min-height: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+  &__title_index {
+    max-width: 556px;
+  }
+
+  &__title-scroll {
+    width: 40px;
+    height: 40px;
+    background-image: url('./../img/header/mouse.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+      transform: translate(-50%, 20%);
     }
+  }
 
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 98px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
     }
-
-    &__top_mobile .header__logo {
-            margin-bottom: 50px;
-    }
-
-    &__top_mobile {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: $dark;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        .header__nav {
-            display: block;
-        }
-
-        .nav__list {
-            flex-direction: column;
-            align-items: center;
-            row-gap: 30px;
-        }
-
-        .header__nav-btn {
-            position: fixed;
-            top: 50px;
-            right: 15px;
-        }
-    }
-
-    &__nav {
-        @include tablet {
-            display: none;
-        }
-    }
-
-    &__nav-btn {
-        display: none;
-
-        @include tablet {
-            display: block;
-        }
-    }
-
-    &__title {
-        position: relative;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 171px;
-
-        @include tablet {
-            padding-bottom: 130px;
-        }
-    }
-
-    &__title_index {
-        max-width: 556px;
-    }
-
-    &__title-scroll {
-        width: 40px;
-        height: 40px;
-        background-image: url('./../img/header/mouse.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        transition: transform .3s ease-in-out;
-
-        &:hover {
-            transform: translate(-50%, 20%);
-        }
-    }
-
-    &__footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        gap: 98px;
-
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 30px;
-        }
-    }
+  }
 }

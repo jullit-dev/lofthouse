@@ -1,45 +1,45 @@
 .info {
-    position: relative;
-    font-size: 18px;
-    width: max-content;
+  position: relative;
+  font-size: 18px;
+  width: max-content;
 
-    &:first-child {
-        justify-self: end;
-    }
+  &:first-child {
+    justify-self: end;
+  }
 
-    &_address,
-    &_phone {
-        padding-left: 35px;
+  &_address,
+  &_phone {
+    padding-left: 35px;
 
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: -2px;
-            width: 21px;
-            height: 21px;
-            background-repeat: no-repeat;
-            background-position: right;
-        }
-
-        @include tablet {
-            padding-left: 30px;
-        }
-    }
-
-    &_address {
-        &::before {
-            background-image: url('./../img/header/map.svg');
-        }
-    }
-
-    &_phone {
-        &::before {
-            background-image: url('./../img/header/phone.svg');
-        }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 21px;
+      height: 21px;
+      background-repeat: no-repeat;
+      background-position: right;
     }
 
     @include tablet {
-        font-size: 14px;
+      padding-left: 30px;
     }
+  }
+
+  &_address {
+    &::before {
+      background-image: url('./../img/header/map.svg');
+    }
+  }
+
+  &_phone {
+    &::before {
+      background-image: url('./../img/header/phone.svg');
+    }
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
 }

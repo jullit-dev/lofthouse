@@ -1,56 +1,56 @@
 .benefits {
-    position: relative;
-    padding: 120px 0;
-    overflow: hidden;
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  &::after {
+    content: 'II';
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0%);
+    line-height: 1.15;
+    @include decorNumber;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
 
     @include tablet {
-        padding: 60px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 40px 30px;
     }
+  }
 
-    &::after {
-        content: 'II';
-        left: calc(50% + 555px);
-        transform: translate(-50%, 0%);
-        line-height: 1.15;
-        @include decorNumber;
+  &__item {
+
+    text-align: center;
+    padding: 0;
+  }
+
+  &__item-img {
+    margin-bottom: 53px;
+
+    @include tablet {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
     }
+  }
 
-    &__list {
-        display: flex;
-        justify-content: center;
-        column-gap: 70px;
+  &__item-text {
+    font-size: 20px;
+    line-height: 1.35;
+    font-family: $font-secondary;
+    font-weight: 300;
 
-        @include tablet {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-            gap: 40px 30px;
-        }
+    @include tablet {
+      font-size: 16px;
     }
-
-    &__item {
-        
-        text-align: center;
-        padding: 0;
-    }
-
-    &__item-img {
-        margin-bottom: 53px;
-
-        @include tablet {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 20px;
-        }
-    }
-
-    &__item-text {
-        font-size: 20px;
-        line-height: 1.35;
-        font-family: $font-secondary;
-        font-weight: 300;
-
-        @include tablet {
-            font-size: 16px;
-        }
-    }
+  }
 }
