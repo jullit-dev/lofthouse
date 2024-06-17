@@ -1,33 +1,33 @@
 .apartments {
-    position: relative;
+  position: relative;
 
-    &::before {
-        content: 'III';
-        right: calc(50% + 555px);
-        transform: translate(50%, 0%);
-        line-height: 1;
-        @include decorNumber;
+  &::before {
+    content: 'III';
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    line-height: 1;
+    @include decorNumber;
+  }
+
+  &__title {
+    margin-bottom: 88px;
+
+    @include tablet {
+      margin-bottom: 44px;
     }
+  }
 
-    &__title {
-        margin-bottom: 88px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 
-        @include tablet {
-            margin-bottom: 44px;
-        }
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
+  }
 
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-
-        @include tablet {
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        }
-    }
-
-    &__item {
-        display: inline-block;
-    }
+  &__item {
+    display: inline-block;
+  }
 }

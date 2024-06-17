@@ -1,25 +1,25 @@
 .feedback {
-    padding-bottom: 180px;
+  padding-bottom: 180px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 38px;
 
     @include tablet {
-        padding-bottom: 60px;
+      margin-bottom: 19px;
     }
+  }
 
-    &__title {
-        margin-bottom: 38px;
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 30px;
 
-        @include tablet {
-            margin-bottom: 19px;
-        }
+    @include tablet {
+      grid-template-columns: 1fr;
     }
-
-    &__form {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 35px 30px;
-
-        @include tablet {
-            grid-template-columns: 1fr;
-        }
-    }
+  }
 }

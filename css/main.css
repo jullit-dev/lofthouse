@@ -162,7 +162,8 @@ button:focus-visible:not(:hover) {
   width: 1px;
   overflow: hidden;
   position: absolute;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
@@ -624,7 +625,8 @@ button:focus-visible:not(:hover) {
 }
 
 /* Baloon */
-[class*=balloon__layout], [class*=balloon__content] {
+[class*=balloon__layout],
+[class*=balloon__content] {
   background-color: #242b33 !important;
   color: #fff !important;
 }
@@ -637,7 +639,8 @@ button:focus-visible:not(:hover) {
   background-color: #242b33 !important;
 }
 
-[class*=balloon__layout], [class*=balloon__content] a {
+[class*=balloon__layout],
+[class*=balloon__content] a {
   color: #D4C17F !important;
 }
 

@@ -1,31 +1,30 @@
 .district-slider {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            180deg, 
-            $dark 2%, 
-            rgba(36, 43, 51, 0) 50%, 
-            $dark 100%);
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+        $dark 2%,
+        rgba(36, 43, 51, 0) 50%,
+        $dark 100%);
+  }
 
-    &__title {
-        position: absolute;
-        z-index: 3;
-    }
+  &__title {
+    position: absolute;
+    z-index: 3;
+  }
 
-    &__slider {
-        width: 100%;
-        height: 100%;
-    }
+  &__slider {
+    width: 100%;
+    height: 100%;
+  }
 }
