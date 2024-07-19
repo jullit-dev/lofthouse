@@ -3,7 +3,7 @@
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
 let mapIcon = '';
-if (document.querySelector('.map-index')) {
+if (document.querySelector('.section-map_index')) {
   mapIcon = './img/map/location-pin.svg';
 } else {
   mapIcon = './../img/map/location-pin.svg';
