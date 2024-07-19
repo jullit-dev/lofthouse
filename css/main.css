@@ -575,7 +575,7 @@ button:focus-visible:not(:hover) {
   position: relative;
   padding: 180px 0;
 }
-.section-map::before {
+.section-map_index::before {
   content: "V";
   right: calc(50% + 555px);
   transform: translate(50%, 0%);
@@ -905,6 +905,7 @@ button:focus-visible:not(:hover) {
 .video__link {
   position: relative;
   display: inline-block;
+  max-width: 720px;
 }
 .video__link::before {
   content: "";
